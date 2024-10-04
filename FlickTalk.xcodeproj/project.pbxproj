@@ -62,7 +62,7 @@
 		CE85B32F2CAFC67700474E8D = {
 			isa = PBXGroup;
 			children = (
-				CE85B33A2CAFC67700474E8D /* Bubbly */,
+				CE85B33A2CAFC67700474E8D /* FlickTalk */,
 				CE85B3392CAFC67700474E8D /* Products */,
 				7C5F9197E3F734A08F6F1551 /* Pods */,
 				EC1984D50F85EDBD1BD4344B /* Frameworks */,
@@ -77,7 +77,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CE85B33A2CAFC67700474E8D /* Bubbly */ = {
+		CE85B33A2CAFC67700474E8D /* FlickTalk */ = {
 			isa = PBXGroup;
 			children = (
 				CE85B33B2CAFC67700474E8D /* AppDelegate.swift */,
@@ -92,7 +92,7 @@
 				CE85B3492CAFC67900474E8D /* Info.plist */,
 				CE85B3582CB0170F00474E8D /* ChatViewController.swift */,
 			);
-			path = Bubbly;
+			path = FlickTalk;
 			sourceTree = "<group>";
 		};
 		CE85B3552CB0123D00474E8D /* Extensions */ = {
