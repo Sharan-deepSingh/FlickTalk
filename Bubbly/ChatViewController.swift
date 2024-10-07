@@ -69,19 +69,24 @@ class ChatViewController: UIViewController {
     //MARK: - UI Configuration Methods
     private func scrollTableViewToBottom() {
         let numberOfRows = messages.count - 1
-        let indexPath = IndexPath(row: numberOfRows, section: 0)
         
-        chatTableView.scrollToRow(
-            at: indexPath,
-            at: .bottom,
-            animated: true
-        )
+        if numberOfRows >= 0 {
+            let indexPath = IndexPath(row: numberOfRows, section: 0)
+            
+            chatTableView.scrollToRow(
+                at: indexPath,
+                at: .bottom,
+                animated: true
+            )
+        }
     }
     
     //MARK: - Data Updation Related Methods
     private func loadData() {
         db.collection("messages").order(by: "timeStamp").addSnapshotListener { querySnapshot, error in
             if let e = error {
+                guard let _ = Auth.auth().currentUser else { return }
+                
                 self.showAlert(ofType: .externalError(e))
             } else {
                 self.messages = []
