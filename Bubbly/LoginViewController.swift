@@ -1,19 +1,19 @@
 //
-//  RegisterViewController.swift
-//  Bubbly
+//  LoginViewController.swift
+//  FlickTalk
 //
-//  Created by Sharandeep Singh on 04/10/24.
+//  Created by Sharandeep Singh on 05/10/24.
 //
 
 import UIKit
 import FirebaseAuth
 
-class RegisterViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     //MARK: - IBOutlets
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
     
     //MARK: - LifeCycle Methods
     override func viewWillAppear(_ animated: Bool) {
@@ -23,34 +23,35 @@ class RegisterViewController: UIViewController {
     }
     
     //MARK: - IBActions
-    @IBAction func registerButtonPressed(_ sender: UIButton) {
+    @IBAction func loginButtonPressed(_ sender: UIButton) {
         guard let email = emailTextField.text, let password = passwordTextField.text else {
             showAlert(ofType: .insufficientData)
-            
+    
             return
         }
         
         let indicator = showLoader()
         
-        /// Creation of user or signup process using firebase
-        Auth.auth().createUser(withEmail: email,
-                               password: password) { [weak self] result, error in
+        Auth.auth().signIn(withEmail: email,
+                           password: password) { [weak self] authResult, error in
             guard let self = self else { return }
-            
+
             hideLoader(indicator: indicator)
             
             if let e = error {
                 showAlert(ofType: .externalError(e))
-            } else {
-                performSegue(withIdentifier: "ChatViewController", sender: self)
+                
+                return
             }
+            
+            performSegue(withIdentifier: "ChatViewController", sender: self)
         }
     }
     
-    //MARK: - UIConfiguration Methods
+    //MARK: - UI Configuration methods
     private func configureUI() {
         emailTextField.layer.cornerRadius = 16
         passwordTextField.layer.cornerRadius = 16
-        registerButton.layer.cornerRadius = 16
+        loginButton.layer.cornerRadius = 16
     }
 }
