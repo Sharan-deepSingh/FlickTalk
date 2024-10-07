@@ -24,7 +24,6 @@ class ChatViewController: UIViewController {
     //MARK: - Properties
     let db = Firestore.firestore()
     var messages: [MessageModel] = []
-    var isInitialLoad = false
     
     //MARK: - LifeCycle Methods
     override func viewWillAppear(_ animated: Bool) {
@@ -32,7 +31,6 @@ class ChatViewController: UIViewController {
         
         title = "🎈FlickTalk"
         navigationItem.hidesBackButton = true
-        isInitialLoad = true
         loadData()
     }
     
@@ -76,7 +74,7 @@ class ChatViewController: UIViewController {
         chatTableView.scrollToRow(
             at: indexPath,
             at: .bottom,
-            animated: isInitialLoad ? true : false
+            animated: true
         )
     }
     
