@@ -32,5 +32,17 @@ extension UIViewController {
         indicator.stopAnimating()
         indicator.removeFromSuperview()
     }
+    
+    func showAlert(ofType alertType: AlertType) {
+        let alertBody = Alerts.getAlert(ofType: alertType)
+        let alertController = UIAlertController(title: alertBody.title,
+                                                message: alertBody.message,
+                                                preferredStyle: .alert
+        )
+        let alertAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(alertAction)
+        
+        present(alertController, animated: true)
+    }
 }
 

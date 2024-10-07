@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		5BDD91BC1F7604110512C693 /* Pods_Bubbly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B84E2EECEA85903D77B818F /* Pods_Bubbly.framework */; };
+		CE3B82DE2CB1378700066EA9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B82DD2CB1378700066EA9 /* LoginViewController.swift */; };
+		CE3B82E02CB15B8B00066EA9 /* SenderMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B82DF2CB15B8B00066EA9 /* SenderMessageTableViewCell.swift */; };
+		CE3B82E22CB2C82300066EA9 /* ReceiverMessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B82E12CB2C82300066EA9 /* ReceiverMessageTableViewCell.swift */; };
+		CE3B82E42CB302E400066EA9 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B82E32CB302E400066EA9 /* AlertManager.swift */; };
+		CE3B82E62CB3B5D800066EA9 /* CommonMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B82E52CB3B5D800066EA9 /* CommonMethods.swift */; };
+		CE3B82E82CB3C25B00066EA9 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B82E72CB3C25B00066EA9 /* MessageModel.swift */; };
 		CE85B33C2CAFC67700474E8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85B33B2CAFC67700474E8D /* AppDelegate.swift */; };
 		CE85B33E2CAFC67700474E8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85B33D2CAFC67700474E8D /* SceneDelegate.swift */; };
 		CE85B3402CAFC67700474E8D /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85B33F2CAFC67700474E8D /* WelcomeViewController.swift */; };
@@ -24,6 +30,12 @@
 		5952A0CCAD95F820566A196D /* Pods-Bubbly.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bubbly.release.xcconfig"; path = "Target Support Files/Pods-Bubbly/Pods-Bubbly.release.xcconfig"; sourceTree = "<group>"; };
 		7B84E2EECEA85903D77B818F /* Pods_Bubbly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bubbly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8EAC54E4EC773668B343A17 /* Pods-Bubbly.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bubbly.debug.xcconfig"; path = "Target Support Files/Pods-Bubbly/Pods-Bubbly.debug.xcconfig"; sourceTree = "<group>"; };
+		CE3B82DD2CB1378700066EA9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CE3B82DF2CB15B8B00066EA9 /* SenderMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderMessageTableViewCell.swift; sourceTree = "<group>"; };
+		CE3B82E12CB2C82300066EA9 /* ReceiverMessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiverMessageTableViewCell.swift; sourceTree = "<group>"; };
+		CE3B82E32CB302E400066EA9 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		CE3B82E52CB3B5D800066EA9 /* CommonMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonMethods.swift; sourceTree = "<group>"; };
+		CE3B82E72CB3C25B00066EA9 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
 		CE85B3382CAFC67700474E8D /* FlickTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE85B33B2CAFC67700474E8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE85B33D2CAFC67700474E8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,14 +95,20 @@
 				CE85B33B2CAFC67700474E8D /* AppDelegate.swift */,
 				CE85B33D2CAFC67700474E8D /* SceneDelegate.swift */,
 				CE85B3412CAFC67700474E8D /* Main.storyboard */,
-				CE85B3532CB00D7400474E8D /* RegisterViewController.swift */,
 				CE85B33F2CAFC67700474E8D /* WelcomeViewController.swift */,
+				CE85B3532CB00D7400474E8D /* RegisterViewController.swift */,
+				CE3B82DD2CB1378700066EA9 /* LoginViewController.swift */,
+				CE85B3582CB0170F00474E8D /* ChatViewController.swift */,
+				CE3B82DF2CB15B8B00066EA9 /* SenderMessageTableViewCell.swift */,
+				CE3B82E12CB2C82300066EA9 /* ReceiverMessageTableViewCell.swift */,
+				CE3B82E32CB302E400066EA9 /* AlertManager.swift */,
+				CE3B82E52CB3B5D800066EA9 /* CommonMethods.swift */,
+				CE3B82E72CB3C25B00066EA9 /* MessageModel.swift */,
 				CE85B3552CB0123D00474E8D /* Extensions */,
 				CE85B3442CAFC67900474E8D /* Assets.xcassets */,
 				CE85B3462CAFC67900474E8D /* LaunchScreen.storyboard */,
 				CE85B34F2CB0032100474E8D /* GoogleService-Info.plist */,
 				CE85B3492CAFC67900474E8D /* Info.plist */,
-				CE85B3582CB0170F00474E8D /* ChatViewController.swift */,
 			);
 			path = Bubbly;
 			sourceTree = "<group>";
@@ -227,12 +245,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3B82E22CB2C82300066EA9 /* ReceiverMessageTableViewCell.swift in Sources */,
+				CE3B82DE2CB1378700066EA9 /* LoginViewController.swift in Sources */,
+				CE3B82E42CB302E400066EA9 /* AlertManager.swift in Sources */,
 				CE85B3572CB0125500474E8D /* ViewController.swift in Sources */,
 				CE85B3402CAFC67700474E8D /* WelcomeViewController.swift in Sources */,
 				CE85B33C2CAFC67700474E8D /* AppDelegate.swift in Sources */,
+				CE3B82E62CB3B5D800066EA9 /* CommonMethods.swift in Sources */,
+				CE3B82E82CB3C25B00066EA9 /* MessageModel.swift in Sources */,
 				CE85B33E2CAFC67700474E8D /* SceneDelegate.swift in Sources */,
 				CE85B3592CB0170F00474E8D /* ChatViewController.swift in Sources */,
 				CE85B3542CB00D7400474E8D /* RegisterViewController.swift in Sources */,
+				CE3B82E02CB15B8B00066EA9 /* SenderMessageTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

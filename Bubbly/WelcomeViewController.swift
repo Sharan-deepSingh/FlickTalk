@@ -9,12 +9,20 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    //MARK: - IBOutlets
+    @IBOutlet weak var registerButton: UIButton!
+    @IBOutlet weak var loginButton: UIButton!
+    
+    //MARK: - LifeCycle Methods
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        /// We don't need this controller for now
+        configureUI()
     }
-
-
+    
+    //MARK: - UI Configuration methods
+    private func configureUI() {
+        registerButton.layer.cornerRadius = 16
+        loginButton.layer.cornerRadius = 16
+    }
 }
-
