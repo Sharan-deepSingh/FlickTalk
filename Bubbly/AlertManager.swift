@@ -11,6 +11,7 @@ enum AlertType {
     
     case externalError(Error)
     case insufficientData
+    case messagesFetchingFailed
 //    case logOutAlert  Define now option alert for this case
 }
 
@@ -44,6 +45,9 @@ struct Alerts {
             return alert
         case .insufficientData:
             let alert = AlertBody(title: "Insufficient Data", message: "All fields are required")
+            return alert
+        case .messagesFetchingFailed:
+            let alert = AlertBody(title: "Server Error", message: "Failed to get latest messages")
             return alert
         }
     }

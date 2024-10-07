@@ -8,7 +8,6 @@ target 'Bubbly' do
   # Pods for Bubbly
   pod 'IQKeyboardManagerSwift'
   pod 'FirebaseAuth'
-  pod 'FirebaseMessaging'
   pod 'FirebaseFirestore'
   pod "KRActivityIndicatorView"
 end
