@@ -18,6 +18,7 @@ class CommonMethods {
         let offSet = Double(String(stringHeight.first ?? "0")) ?? 0.0
         let cornerRadius = Double((placesCount - 1) * 10) + offSet
         
-        return cornerRadius
+//        return cornerRadius
+        return 12
     }
 }

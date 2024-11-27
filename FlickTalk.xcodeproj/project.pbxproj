@@ -24,6 +24,7 @@
 		CE85B3542CB00D7400474E8D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85B3532CB00D7400474E8D /* RegisterViewController.swift */; };
 		CE85B3572CB0125500474E8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85B3562CB0125500474E8D /* ViewController.swift */; };
 		CE85B3592CB0170F00474E8D /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85B3582CB0170F00474E8D /* ChatViewController.swift */; };
+		CEA113D52CBA94120036F912 /* chatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA113D42CBA94120036F912 /* chatViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		CE85B3532CB00D7400474E8D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CE85B3562CB0125500474E8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE85B3582CB0170F00474E8D /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		CEA113D42CBA94120036F912 /* chatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				CE85B3462CAFC67900474E8D /* LaunchScreen.storyboard */,
 				CE85B34F2CB0032100474E8D /* GoogleService-Info.plist */,
 				CE85B3492CAFC67900474E8D /* Info.plist */,
+				CEA113D42CBA94120036F912 /* chatViewModel.swift */,
 			);
 			path = Bubbly;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA113D52CBA94120036F912 /* chatViewModel.swift in Sources */,
 				CE3B82E22CB2C82300066EA9 /* ReceiverMessageTableViewCell.swift in Sources */,
 				CE3B82DE2CB1378700066EA9 /* LoginViewController.swift in Sources */,
 				CE3B82E42CB302E400066EA9 /* AlertManager.swift in Sources */,

@@ -3,4 +3,70 @@
    uuid = "7143D03A-056C-4623-9CB4-06F480884257"
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C3DFBEE1-E023-4BC0-90CE-AAA52962C84E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bubbly/ChatViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "228"
+            endingLineNumber = "228"
+            landmarkName = "loadNext()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DA1E11D8-5491-443E-8610-B2A683556B51"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Bubbly/ChatViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "247"
+            endingLineNumber = "247"
+            landmarkName = "loadNext()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DA1E11D8-5491-443E-8610-B2A683556B51 - 61b3fcb560b4f30d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in FlickTalk.ChatViewController.loadNext() -&gt; ()"
+                  moduleName = "FlickTalk"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Downloads/UIKit%20Sample%20Projects/Bubbly/Bubbly/ChatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "238"
+                  endingLineNumber = "238"
+                  offsetFromSymbolStart = "3200">
+               </Location>
+               <Location
+                  uuid = "DA1E11D8-5491-443E-8610-B2A683556B51 - 61b3fcb560b4f30d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in FlickTalk.ChatViewController.loadNext() -&gt; ()"
+                  moduleName = "FlickTalk"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/user/Downloads/UIKit%20Sample%20Projects/Bubbly/Bubbly/ChatViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "238"
+                  endingLineNumber = "238"
+                  offsetFromSymbolStart = "3256">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
